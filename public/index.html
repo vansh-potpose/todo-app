@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1 class="app-title">To-Do List Manager</h1>
+
+        <div class="container">
+            <!-- TA Tasks -->
+            <div class="list">
+                <h2>TA Tasks</h2>
+                <div class="new-task">
+                    <div class="inputh">
+                         
+                        <input type="text" id="taTaskInput" placeholder="Add a TA Task" class="task-input">
+                        <input type="date" id="taTaskDate" class="task-date">
+                    </div >
+                    <button class="add-task-btn" onclick="addTask('ta')">Add Task</button>
+                </div>
+                <ul id="taTasks" class="task-list"></ul>
+            </div>
+
+            <!-- Exam Tasks -->
+            <div class="list">
+                <h2>Exams</h2>
+                <div class="new-task">
+                    <div class="inputh">
+                    <input type="text" id="examTaskInput" placeholder="Add an Exam Task" class="task-input">
+                    <input type="date" id="examTaskDate" class="task-date">
+                </div>
+                    <button class="add-task-btn" onclick="addTask('exam')">Add Task</button>
+                </div>
+                <ul id="examTasks" class="task-list"></ul>
+            </div>
+
+            <!-- Practical Submissions -->
+            <div class="list">
+                <h2>Practical Submissions</h2>
+                <div class="new-task">
+                    <div class="inputh">
+                    <input type="text" id="practicalTaskInput" placeholder="Add a Practical Task" class="task-input">
+                    <input type="date" id="practicalTaskDate" class="task-date">
+                </div>
+                    <button class="add-task-btn" onclick="addTask('practical')">Add Task</button>
+                </div>
+                <ul id="practicalTasks" class="task-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
